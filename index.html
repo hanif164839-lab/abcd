@@ -1,11 +1,9 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Redirecting...</title>
-  <!-- Fallback HTML meta refresh in case JavaScript is disabled -->
-  <meta http-equiv="refresh" content="2;url=https://win88bdt.com/" />
+  <title>Welcome</title>
   
   <style>
     /* Reset & Base Styles */
@@ -197,31 +195,6 @@
       transform: translateX(4px);
     }
 
-    /* Smooth 2-Second Progress Track */
-    .progress-wrapper {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-    }
-
-    .progress-track {
-      width: 100%;
-      height: 4px;
-      border-radius: 9999px;
-      background: rgba(255, 255, 255, 0.08);
-      overflow: hidden;
-    }
-
-    .progress-fill {
-      height: 100%;
-      width: 0%;
-      border-radius: 9999px;
-      background: linear-gradient(90deg, var(--primary-glow), var(--primary-bright), var(--gold-accent));
-      box-shadow: 0 0 12px rgba(52, 211, 153, 0.6);
-      animation: fillProgress 2s linear forwards;
-    }
-
     /* Keyframes */
     @keyframes gradientShift {
       0% { background-position: 0% 50%; }
@@ -259,94 +232,5 @@
       }
     }
 
-    @keyframes fillProgress {
-      from { width: 0%; }
-      to { width: 100%; }
-    }
-
     /* Mobile Adjustments */
-    @media (max-width: 480px) {
-      .card {
-        padding: 2.25rem 1.5rem;
-        border-radius: 24px;
-        gap: 1.5rem;
-      }
-
-      .title {
-        font-size: 1.2rem;
-      }
-
-      .continue-btn {
-        padding: 1.05rem 1.5rem;
-        font-size: 1.05rem;
-        border-radius: 16px;
-      }
-    }
-  </style>
-</head>
-<body>
-  <!-- Ambient Background -->
-  <div class="bg-canvas">
-    <div class="orb orb-1"></div>
-    <div class="orb orb-2"></div>
-  </div>
-
-  <!-- Centered Layout -->
-  <main class="container">
-    <div class="card">
-      <div class="status-badge">
-        <span class="pulse-dot"></span>
-        <span>Redirecting you shortly...</span>
-      </div>
-
-      <h1 class="title">Taking you to your destination</h1>
-
-      <!-- Primary Fallback & Instant Action Button -->
-      <a id="continue-btn" href="https://win88bdt.com/" target="_self" rel="noopener" class="continue-btn">
-        <span>CONTINUE</span>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <line x1="5" y1="12" x2="19" y2="12"></line>
-          <polyline points="12 5 19 12 12 19"></polyline>
-        </svg>
-      </a>
-
-      <!-- 2-Second Visual Progress Indicator -->
-      <div class="progress-wrapper" aria-hidden="true">
-        <div class="progress-track">
-          <div class="progress-fill"></div>
-        </div>
-      </div>
-    </div>
-  </main>
-
-  <script>
-    // =========================================================
-    // SINGLE CONFIGURABLE DESTINATION URL
-    // =========================================================
-    const DESTINATION_URL = "https://win88bdt.com/";
-
-    (function initRedirect() {
-      const REDIRECT_DELAY_MS = 2000;
-      const continueBtn = document.getElementById("continue-btn");
-
-      // Bind the configurable URL directly to the CONTINUE button
-      if (continueBtn) {
-        continueBtn.href = DESTINATION_URL;
-        continueBtn.addEventListener("click", function (event) {
-          event.preventDefault();
-          window.location.href = DESTINATION_URL;
-        });
-      }
-
-      // Trigger automatic redirect after 2 seconds in the same tab
-      setTimeout(function () {
-        try {
-          window.location.replace(DESTINATION_URL);
-        } catch (err) {
-          window.location.href = DESTINATION_URL;
-        }
-      }, REDIRECT_DELAY_MS);
-    })();
-  </script>
-</body>
-</html>
+    @media (max-width:
